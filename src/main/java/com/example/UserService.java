@@ -3,11 +3,8 @@ package main.java.com.example;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
-import java.util.logging.Logger;
 
 public class UserService {
-    private static final Logger logger = Logger.getLogger(UserService.class.getName());
-
     // FIXED: Read credentials from environment variables
     private String password = System.getenv("DB_PASSWORD");
     private String username = System.getenv("DB_USERNAME");
