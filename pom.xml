@@ -45,8 +45,8 @@
                 </executions>
                 <configuration>
                     <excludes>
-                        <!-- Exclude logger initialization lines -->
-                        <exclude>com/example/App.class</exclude>
+                        <!-- Exclude UserService methods that require database -->
+                        <exclude>com/example/UserService.class</exclude>
                     </excludes>
                 </configuration>
             </plugin>
